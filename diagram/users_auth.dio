@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e">
+    <diagram id="fHqoc_BqjPH5mTO9wavX" name="Page-1">
+        <mxGraphModel dx="1020" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="enviar registro de usuário" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="10" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;" parent="1" source="6" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=none;html=1;" parent="1" source="6" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="valida se usuário&lt;div&gt;existe no banco de dados&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="90" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;" parent="1" source="8" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="não existe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="105" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=none;html=1;" parent="1" source="10" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="existe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="190" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=none;html=1;" parent="1" source="12" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="msg pra criar o usuario novamente" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="10" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="cria o usuário no banco dados" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="95" y="260" width="70" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
