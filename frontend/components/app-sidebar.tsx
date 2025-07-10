@@ -5,13 +5,20 @@ import {
   AudioWaveform,
   BookOpen,
   Bot,
+  Car,
+  CarFront,
+  CarTaxiFrontIcon,
+  Clock10Icon,
   Command,
+  CreditCard,
   Frame,
   GalleryVerticalEnd,
+  HelpCircle,
   Map,
   PieChart,
   Settings2,
   SquareTerminal,
+  UserCircle,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
@@ -52,108 +59,100 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
+      title: "Meus Veículos",
+      url: "/meus-veiculos",
+      icon: CarFront,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Ativos",
+          url: "/meus-veiculos/ativos",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Histórico",
+          url: "/meus-veiculos/historico",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Agendamentos",
+          url: "/meus-veiculos/agendamentos",
         },
       ],
     },
     {
-      title: "Models",
-      url: "#",
-      icon: Bot,
+      title: "Catálogo",
+      url: "/catalogo",
+      icon: Car,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Todos os Veículos",
+          url: "/catalogo",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "Carros Populares",
+          url: "/catalogo/populares",
         },
         {
-          title: "Quantum",
-          url: "#",
+          title: "SUVs & Executivos",
+          url: "/catalogo/suvs",
         },
       ],
     },
     {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
+      title: "Minhas Reservas",
+      url: "/reservas",
+      icon: Clock10Icon,
+    },
+    {
+      title: "Pagamentos",
+      url: "/pagamentos",
+      icon: CreditCard,
       items: [
         {
-          title: "Introduction",
-          url: "#",
+          title: "Faturas",
+          url: "/pagamentos/faturas",
         },
         {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
+          title: "Métodos de Pagamento",
+          url: "/pagamentos/metodos",
         },
       ],
     },
     {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
+      title: "Suporte",
+      url: "/suporte",
+      icon: HelpCircle,
       items: [
         {
-          title: "General",
-          url: "#",
+          title: "FAQ",
+          url: "/suporte/faq",
         },
         {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
+          title: "Fale Conosco",
+          url: "/suporte/contato",
         },
       ],
     },
-  ],
-  projects: [
     {
-      name: "Design Engineering",
-      url: "#",
-      icon: Frame,
+      title: "Conta",
+      url: "/conta",
+      icon: UserCircle,
+      items: [
+        {
+          title: "Meus Dados",
+          url: "/conta/dados",
+        },
+        {
+          title: "Segurança",
+          url: "/conta/seguranca",
+        },
+        {
+          title: "Sair",
+          url: "/logout",
+        },
+      ],
     },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: Map,
-    },
-  ],
+  ]
+
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -164,7 +163,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
